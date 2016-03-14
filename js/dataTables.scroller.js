@@ -587,7 +587,7 @@ $.extend( Scroller.prototype, {
 		// init complete, which would be useful for cases where the data is Ajax
 		// loaded and longer than a single line.
 		$(this.s.dt.nTable).one( 'init.dt', function () {
-			that.fnMeasure();
+			that.fnMeasure(false);
 		} );
 
 		/* Destructor */
